@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="painel.css">
+    <title>Painel | Clínica Médica</title>
+</head>
+<body>
+    <header>
+    <div class="navbar show-menu">
+        <div class="header-inner-content">
+          <h1 class="logo">Clinica<span>Médica</span></h1>
+          <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+              </ul>
+          </nav>
+          <div class="nav-icon-container">
+              <img src="./img/logout.png"/>
+              <img src="./img/menu.png" class="menu-button"/>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="title-informative-card">
+            <h1>Olá! Você acessou o painel da clínica.</h1>
+            <p>Bem-vindo(a) à <span>Clinica Médica!</span></p>
+            <p>Prezado cliente, verifique abaixo todos os recursos que disponibilizamos:</p>
+            <p>Aqui é possível realizar agendamentos de acordo com suas necessidades.</p>
+            <p>Além de <span>cobrimos prioridades, planos de saúde e triagem.</span> Para isso, você deve preencher informações e dados pessoais, para filtrarmos de acordo com sua requisição :D</p>
+            <p>Você pode acompanhar sua fila de espera aqui em nosso site, então fique atento ao nosso sistema! <span>É possível também visualizar o número de paciente em espera, o nome do próximo paciente</span> e outras informações importantes!</p>
+        </div>
+        <form id="form-date-clientes">
+        <div class="principal-content">
+            <h1>Preencha as informações:</h1>
+            <input type="text" id="complete-name" name="complete-name" placeholder="Nome completo:" required>
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço:" required>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF (Somente digitos):" required>
+            <label for="plano-select">Qual o tipo de plano?</label>
+            <select id="plano-select" name="plano-select">
+                <option id="particular" value="particular">Particular</option>
+                <option id="plano-flex" value="plano-flex">Plano Flex</option>
+                <option id="plano-max" value="plano-max">Plano Max</option>
+                <option id="plano-diamante" value="plano-diamante">Plano Diamante</option>
+                <option id="plano-gold" value="plano-gold">Plano Gold</option>
+                <option id="plano-empresarial" value="plano-empresarial">Plano Empresarial</option>
+            </select>
+            <select id="triagem-select" name="triagem-select">
+                <option id="verde" value="verde">Verde</option>
+                <option id="amarelo" value="amarelo">Amarelo</option>
+                <option id="vermelho" value="vermelho">Vermelho</option>
+            </select>
+            <input type="submit" value="Agendar Atendimento" id="btnAgendar"> <!--Adicionar os serviços-->
+            <input type="button" value="Executar Atendimento" id="btnExecutar"> <!--Executar os serviços-->
+        </div>
+        <div class="info-clientes">
+            <h3>Clientes Pendentes:
+                <span id="pacientes_pendentes"></span>
+            </h3>
+            <p class="titulo-exec">Cliente em atendimento:</p>
+            <h4 id="clientesExecucao"></h4>
+        </div>
+    </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Clínica Médica - Todos os direitos reservados </p> <!--$copy; geração do Czinho de CopyRight-->
+    </footer>
+    <script src="main.js"></script>
+    <script src="menu-button.js"></script>     
+</body>
+</html>

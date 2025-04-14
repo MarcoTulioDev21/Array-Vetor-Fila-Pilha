@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="credenciais.css">
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <title>Login | Clinica Médica</title>
+</head>
+<body>
+    <header>
+        <nav> 
+            <ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastrar.html">Registrar-se</a></li>
+                </ul>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <h1 id="title">Entrar: Efetue o login.</h1>
+        <div class="input-account">
+            <label for="user-info">Usuário:</label>
+            <input type="text" id="user-info" name="user-info" required>
+            <label for="password-info">Senha:</label>
+            <input type="text" id="password-info" name="password-info" required>
+            <input type="button" value="Entrar" onclick="checkLogin()">
+            <div class="container">
+                <div id="buttonDiv"></div><br>
+            </div>
+            <p>Não possui registro? <a href="cadastrar.html">Registrar-se</a></p>
+        </div>
+    </main>
+<footer>
+    <p>&copy; 2024 Clínica Médica - Todos os direitos reservados </p> <!--$copy; geração do Czinho de CopyRight-->
+</footer>
+<script src="authentication.js"></script>
+</body>
+</html>

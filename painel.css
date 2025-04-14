@@ -1,0 +1,197 @@
+/*Estilizando o grupo body*/
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+width: 100%;
+}
+
+/*Estilizando o cabeçalho da página e também o menu de navegações*/
+.header-inner-content {
+max-width: 1300px;
+margin-left: auto;
+margin-right: auto;
+}
+  
+.navbar {
+background-color: rgb(90, 159, 219);
+box-shadow: 10px 0px 10px #2c2c2c;
+z-index: 99;
+font-family: Arial, Helvetica, sans-serif;
+}
+  
+.navbar div {
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: relative;
+}
+  
+.logo{
+color: #16335e;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.logo span{
+color: aliceblue;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+nav ul{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  
+nav ul li {
+margin: 0 15px;
+}
+  
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+  
+nav ul li a:hover {
+color: #000000;
+}
+  
+.nav-icon-container {
+display: flex;
+align-items: center;
+}
+  
+.nav-icon-container img {
+width: 30px;
+cursor: pointer;
+}
+  
+.nav-icon-container img:first-child {
+margin-right: 1rem;
+}
+
+.menu-button {
+display: none;
+}
+  
+/*Estlizando a main e os conteúdos*/
+main{
+flex: 1;
+width: 100%;
+display: flex;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.title-informative-card{
+background-color: rgb(255, 255, 255);
+width: 30%;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(125, 125, 125, 0.95);
+margin: 10px;
+}
+.title-informative-card h1{
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding-bottom: 100px;
+color: #1d427a;
+margin: 5px;
+}
+
+.title-informative-card p{
+font-family:Arial, Helvetica, sans-serif;   
+padding-bottom: 10px;
+color: rgb(51, 51, 51);
+margin: 5px;
+font-size: 115%;
+text-align: justify;
+}
+.title-informative-card span{
+font-weight: bold;
+}
+
+.principal-content{
+box-shadow: 0 2px 5px rgba(125, 125, 125, 0.95);
+background-color: rgb(255, 255, 255);
+width: 65%;
+margin-left: 10px;
+border-radius: 5px;
+margin: 10px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.principal-content h1{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(120, 120, 120, 0.95);
+    background-color: rgb(90, 159, 219);
+    border-radius: 10px;
+    font-size: 150%;
+    padding-bottom: 10px;
+}
+
+.info-clientes{
+box-shadow: 0 2px 5px rgba(125, 125, 125, 0.95);
+background-color: rgb(255, 255, 255);
+width: 32%;
+margin-left: 10px;
+border-radius: 5px;
+margin: 10px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Estilizando o rodapé da página.*/
+footer{
+background-color: rgb(90, 159, 219);
+color: white;
+text-align: center;
+padding: 5px 0;
+margin-top: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px) {
+      /* Ajustes para o logotipo */
+.logo{
+font-size: 1.2rem;
+}
+
+/* Exibição do botão do menu em telas menores */
+.menu-button {
+display: block;
+}
+
+/* Estilos para o menu de navegação em telas menores */
+nav{
+position: absolute;
+background-color: #2c2c2c;
+width: 100%;
+top: 47px;
+display: none;
+}
+
+/* Exibição do menu de navegação quando ativado */
+.show-menu nav {
+display: block;
+}
+
+/* Ajustes para a lista de navegação */
+nav ul{
+flex-direction: column;
+}
+
+/* Ajustes para os itens da lista de navegação */
+nav ul li {
+text-align: center;
+padding: 0.8rem;
+}   
+}

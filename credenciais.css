@@ -1,0 +1,103 @@
+/*Estilizando o grupo body*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url();
+}
+
+/*Estilizando o cabeçalho da página e também o menu de navegações*/
+header{
+    background-color: rgb(90, 159, 219);
+    padding: 30px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(118, 118, 118, 0.95);
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(72, 72, 72, 0.95);
+}
+a:hover{
+    color: rgb(66, 79, 113);
+}
+
+/* Estilizando os conteúdos principais da página constituintes da main*/
+main{
+    flex: 1;
+}
+h1[id="title"]{ 
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(46, 46, 46);
+    padding-top: 60px;
+}
+.input-account{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
+label{
+    padding-right: 230px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 20px;
+    font-size: 20px;
+}
+input[type="password"],
+input[type="text"],
+input[type="number"]{
+  padding: 8px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  width: 15%;
+}
+input[type="button"],
+input[type="submit"]{
+    padding: 10px;
+    width: 16%;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    font-size: 115%;
+    background-color: rgb(138, 161, 176);
+    color: white;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover{
+    background-color: #5e6e77;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 115%;
+}
+
+/*Estilizando o rodapé da página.*/
+footer{
+    background-color: rgb(90, 159, 219);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
